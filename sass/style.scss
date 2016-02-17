@@ -1,0 +1,259 @@
+@import "_normalize";
+$orange: #f58220;
+$grey:#5b5e5e;
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+
+}
+body{
+	margin: 0 auto;
+	width: 1200px;
+	.header{
+		width: 100%;
+		height: 100px;
+		background: #fff;
+		.header_logo{
+			border: 0;
+    		margin: 20px 4%;
+		}
+		nav{
+			float: right;
+			width: 55%;
+    		margin-right: 2%;
+			.header_nav{
+				width: 100%;
+    			margin-top: 30px;
+				.header_nav_li{
+					display: inline-block;
+					color: #656867;
+					margin-right: 4%;
+					&:hover{
+						color: $orange;
+					}
+				}
+				#header_nav_partner{
+					border: 1px solid #fff;
+    				padding:7px 13px;
+    				@include border-radius(4px);
+					background-image: -webkit-linear-gradient(bottom, #FAA21A 20%, #F47520 100%);
+					background-image: -o-linear-gradient(bottom, #FAA21A 20%, #F47520 100%);
+					background-image: linear-gradient(to top, #FAA21A 20%, #F47520 100%);
+					background-image: -ms-linear-gradient(bottom, #FAA21A 20%, #F47520 100%);
+					background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20, #FAA21A), color-stop(100, #F47520));
+					background-image: -moz-linear-gradient(bottom, #FAA21A 20%, #F47520 100%);
+					&:hover{
+						background-image: linear-gradient(to top, #F47520 20%, #FAA11A 60%);
+						background-image: -webkit-linear-gradient(bottom, #F47520 20%, #FAA11A 60%);
+						background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20, #F47520), color-stop(60, #FAA11A));
+						background-image: -o-linear-gradient(bottom, #F47520 20%, #FAA11A 60%);
+						background-image: -moz-linear-gradient(bottom, #F47520 20%, #FAA11A 60%);
+						background-image: -ms-linear-gradient(bottom, #F47520 20%, #FAA11A 60%);
+					}
+				}
+			}
+		}
+	}
+	main{
+		overflow: auto;
+		.pics{
+			overflow: auto;
+			width: 100%;
+		    
+		    background: url(images/background.png);
+		    .pics_h2{
+		    	text-align: center;
+			    text-transform: uppercase;
+			    color: $orange;
+			    font-size: 25px;
+			    margin-bottom: 10px;
+			    .pics_h2_span{
+			    	color: #fff;
+			    }
+		    }
+		    .pics_img{
+		    	margin: 0 7%;
+			    width: 87%;
+			    padding: 0;
+		    	.pics_img_li{
+		    		display: inline-block;
+		    		width: 340px;
+		    		background: url(images/schools.png) no-repeat;
+		    		height: 177px;
+		    		
+		    		color: #fff;
+		    		position: relative;
+		    		p{
+		    			position: absolute;
+		    			top: 60%;
+    					right: 5%;
+    					text-align: end;
+    					white-space: pre-wrap;
+    					width: 57%;
+    					font-size: 18px;
+		    		}
+		    	}
+
+		    	a:nth-child(2){
+		    		li{
+		    			background: url(images/hotels.png) no-repeat;
+		    			p{
+		    				top: 70%;
+		    			}
+		    		}
+		    	}
+		    	a:nth-child(3){
+		    		li{
+		    			background: url(images/construction.png) no-repeat;
+		    		}
+		    	}
+		    	a:nth-child(4){
+		    		li{
+		    			background: url(images/accomodation.png) no-repeat;
+		    		}
+		    	}
+		    	a:nth-child(5){
+		    		li{
+		    			background: url(images/offices.png) no-repeat;
+		    			p{
+		    				top: 70%;
+		    			}
+		    		}
+		    	}
+		    	a:nth-child(6){
+		    		li{
+		    			background: url(images/design.png) no-repeat;
+		    			p{
+		    				width: 35%;
+		    			}
+		    		}
+		    	}
+		    	a:nth-child(7){
+		    		li{
+		    			background: url(images/reastaurants.png) no-repeat;
+		    			margin-bottom: 0;
+		    			p{
+		    				top: 70%;
+		    			}
+		    		}
+		    	}
+		    	a:nth-child(8){
+		    		li{
+		    			background: url(images/saloon.png) no-repeat;
+		    			margin-bottom: 0;
+		    			p{
+		    				top: 70%;
+		    			}
+		    		}
+		    	}
+		    	a:nth-child(9){
+		    		li{
+		    			background: url(images/reatail.png) no-repeat;
+		    			margin-bottom: 0;
+		    			p{
+		    				top: 70%;
+		    			}
+		    		}
+		    	}
+		    }
+		}
+		section{
+			overflow: auto;
+			.dear{
+				overflow: auto;
+				width: 100%;
+				background: url(images/background1.png) no-repeat;
+				
+				.dear_table{
+					background: url(images/client.png) no-repeat;
+					float: left;
+					height: 296px;
+					margin: 4% 0 2% 16%;
+					width: 33%;
+
+					.dear_table_wrap{
+						background: url(images/window.png) no-repeat;
+						position: relative;
+						left: -15%;
+    					top: 15%;
+    					height: 170px;
+    					width: 90%;
+    					.dear_table_wrap_h3{
+    						text-align: center;
+						    padding-top: 5%;
+						    text-transform: uppercase;
+						    color: #adaeae;
+						    margin-bottom: 0%;
+						    .dear_table_wrap_span{
+						    	color: #000;
+						    }
+    					}
+    					.dear_table_wrap_text{
+    						width: 79%;
+						    text-align: center;
+						    margin-left: 11%;
+    					}
+    					.dear_table_wrap_btn{
+    						margin-left: 26%;
+    						padding: 5px 25px;
+    					}
+						
+					}
+					#dear_tab_wrap{
+						background: url(images/window1.png) no-repeat;
+						left: 22%;
+					}	
+				}
+				#dear_tab{
+					background: url(images/supplier.png) no-repeat;
+					margin-left: 2%
+				}
+			}
+			.choice{
+				.choice_h2{
+					    text-align: center;
+    					text-transform: uppercase;
+    					margin-top: 3%;
+    					.choice_h2_span{
+    						color: $grey;
+    					}
+				}
+				p{
+					text-align: center;
+					margin-bottom: 7%;
+					span{
+						color: $grey;
+					}
+				}
+				.choice_cart{
+					.choice_cart_form{
+						display: inline-block;
+						.choice_cart_form_round{
+							width: 100px;
+						    height: 100px;
+						    float: left;
+						    border: 1px solid $orange;
+						    @include border-radius(50%);
+						    
+						    .choice_cart_form_round_img{
+
+						    }	
+						}
+						.choice_cart_form_h4{
+						    margin: 8% 0 10% 38%;
+						    border-left: 3px solid $grey;
+						    padding-left: 6%;
+						    font-size: 21px;
+						}
+						.choice_cart_form_text{
+							text-align: left;
+    						margin-top: 15%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
