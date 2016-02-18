@@ -1,7 +1,10 @@
 @import "_normalize";
 @import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption|PT+Serif);
+@import url(fonts/helveticaneuecyr-light.otf);
+@import url(fonts/helveticaneuecyr-Roman.otf);
 $orange: #f58220;
 $grey:#5b5e5e;
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -14,12 +17,17 @@ $grey:#5b5e5e;
       -ms-background-size: $word;
           background-size: $word;
 }
+.wrapper{
+	margin: 0 auto;
+	width: 1280px
+}
 .dear_table_wrap_btn{
-	margin-left: 23%;
+	margin-left: 21%;
 	padding: 5px 25px;
 	border: 2px;
 	color: #fff;
 	text-transform: uppercase;
+	font-family: "helveticaneuecyr-Roman",Serif;
 	@include border-radius(4px);
 	background-image: -o-linear-gradient(bottom, #FFC234 0%, #FAA11A 100%);
 	background-image: -moz-linear-gradient(bottom, #FFC234 0%, #FAA11A 100%);
@@ -76,15 +84,16 @@ body{
 		}
 		nav{
 			float: right;
-			width: 55%;
-    		margin-right: 2%;
+			width: 54%;
+    		
 			.header_nav{
-				width: 100%;
+				width: 97%;
     			margin-top: 30px;
 				.header_nav_li{
 					display: inline-block;
 					color: #656867;
-					margin-right: 4%;
+					margin-right: 5%;
+					font-family: 'helveticaneuecyr-Roman',Serif;
 					&:hover{
 						color: $orange;
 					}
@@ -106,6 +115,7 @@ body{
 					background-image: -ms-linear-gradient(bottom, #FFC234 0%, #FAA11A 100%);
 					background-image: linear-gradient(to bottom, #FFC234 0%, #FAA11A 100%);
 					&:hover{
+						color: #656867;
 						background-image: -webkit-gradient(
 							linear,
 							left bottom,
@@ -136,20 +146,22 @@ body{
 			    color: $orange;
 			    font-size: 25px;
 			    margin-bottom: 10px;
+			    font-family: 'PT Serif Caption', serif;
 			    .pics_h2_span{
 			    	color: #fff;
 			    }
 		    }
 		    .pics_img{
-		    	margin: 0 7%;
-			    width: 87%;
+		    	margin: 0 auto;
+    			width: 81%;
 			    padding: 0;
+			    display: block;
 		    	.pics_img_li{
 		    		display: inline-block;
 		    		width: 340px;
 		    		background: url(images/schools.png) no-repeat;
 		    		height: 177px;
-		    		
+		    		font-family: 'PT Serif', serif;
 		    		color: #fff;
 		    		position: relative;
 		    		p{
@@ -253,14 +265,16 @@ body{
 						    text-transform: uppercase;
 						    color: #adaeae;
 						    margin-bottom: 0%;
+						    font-family: 'PT Serif Caption', serif;
 						    .dear_table_wrap_span{
 						    	color: #000;
 						    }
     					}
     					.dear_table_wrap_text{
-    						width: 79%;
+    						width: 85%;
 						    text-align: center;
-						    margin-left: 11%;
+						    margin-left: 8%;
+						    font-family: 'PT Serif Caption', serif;
     					}
     					
 						
@@ -281,6 +295,7 @@ body{
 				    text-align: center;
 					text-transform: uppercase;
 					margin-top: 3%;
+					font-family: 'PT Serif Caption', serif;
 					.choice_h2_span{
 						color: $grey;
 					}
@@ -288,6 +303,7 @@ body{
 				p{
 					text-align: center;
 					margin-bottom: 7%;
+					font-family: 'PT Serif Caption', serif;
 					span{
 						color: $grey;
 					}
@@ -324,6 +340,7 @@ body{
 						    border-left: 3px solid $grey;
 						    padding-left: 6%;
 						    font-size: 21px;
+						    font-family: 'PT Serif', serif;
 
 						}
 						.choice_cart_form_approach{
@@ -336,6 +353,7 @@ body{
 						.choice_cart_form_text{
 							text-align: left;
     						margin-top: 20%;
+    						font-family: 'helveticaneuecyr-light',serif;
 						}
 					}
 				}
@@ -350,6 +368,7 @@ body{
 		    	color: $grey;
 		    	text-transform: uppercase;
 		    	font-size: 24px;
+		    	font-family: 'PT Serif Caption', serif;
 		    }
 		    .main_footer_h5{
 		    	text-align: center;
@@ -361,6 +380,7 @@ body{
 		    	.main_footer_p{
 		    		color: $grey;
 		    		margin-bottom: 7%;
+		    		font-family: 'PT Serif', serif;
 		    		.main_footer_p_span{
 		    			color: #fff;
 		    		}
@@ -386,6 +406,7 @@ body{
 	    				margin-bottom: 70px;
 	    				text-transform: uppercase;
 	    				font-size: 14px;
+	    				font-family: 'helveticaneuecyr-Roman',serif;
 			    		.main_footer_point{
 			    			margin-left: 329px;
     						margin-top: 14px;
@@ -398,11 +419,12 @@ body{
 		    		width: 33%;
 		    		
 		    		margin-left: 7%;
-		    		padding-bottom: 230px;
+		    		padding-bottom: 250px;
 				    padding-top: 6px;
 				    text-indent: 10px;
 				    margin-bottom: 15px;
     				margin-top: 15px;
+    				font-family: 'PT Serif', serif;
 		    	}
 		    	.main_footer_form_mail{
 		    		width: 33%;
@@ -410,6 +432,7 @@ body{
 		    		margin-left: 7%;
 		    		text-indent: 10px;
 		    		margin-bottom: 20px;
+		    		font-family: 'PT Serif', serif;
 		    	}
 		    	.main_footer_form_submit{
 		    		background: transparent;
@@ -430,6 +453,7 @@ body{
 		    		margin-left: 2%;
 		    		font-size: 14px; 
 		    		display: inline-block;
+		    		font-family: 'PT Serif', serif;
 		    	}
 		    }
 		    .main_footer_foot{
@@ -441,6 +465,7 @@ body{
 			    	color: #fff;
 			    	text-align: center;
 			    	font-size: 24px;
+			    	font-family: 'PT Serif', serif;
 			    	margin-top: 95px;
     				margin-bottom: 40px;
 			    }
@@ -449,7 +474,11 @@ body{
 				    opacity: 0.9;
 				    width: 16%;
 				    height: 45px;
-				    margin-bottom: 84px;
+				    margin: 6% auto;
+				    display: block;
+				    position: relative;
+				    z-index: 1;
+				    font-family: 'helveticaneuecyr-Roman',serif;
 			    }
 		    }
 		}
@@ -466,18 +495,20 @@ body{
 		    .footer_img_p{
 		    	font-size: 12px;
     			color: #adafaf;
+    			font-family: 'helveticaneuecyr-light',serif;
 		    }
 		}
 		.footer_ul{
 			float: left;
-    		margin: 6% 0 2% 10%;
+    		margin: 6% 0 2% 12%;
     		width: 34%;
     		position: relative;
     		z-index: 4;
     		.footer_ul_li{
     			display: inline-block;
     			color: #fff;
-    			margin-right: 5%;
+    			margin-right: 3%;
+    			font-family: 'helveticaneuecyr-light',serif;
 
     		}
     		#footer_ul_partner{
@@ -490,15 +521,21 @@ body{
 			    text-transform: uppercase;
     			&:hover{
     				background: #fff;
-    				color: transparent;
+    				color: #adafaf;
+    				-webkit-box-shadow: 0 -2px;
+				     -moz-box-shadow: 0 -2px;
+				      -ms-box-shadow: 0 -2px;
+				          box-shadow: 0 -2px;
+
     			}
     		}
 		}
 		.footer_p{
 			float: right;
 		    margin-top: 4%;
-		    margin-right: 2%;
+		    margin-right: 4%;
 		    color: #adafaf;
+		    font-family: 'helveticaneuecyr-light',serif;
 		    .footer_a{
 		    	color: #fff;
 		    }
@@ -513,6 +550,8 @@ body{
 			.footer_soc{
 				text-transform: uppercase;
 				color: #adafaf;
+				font-family: 'helveticaneuecyr-light',serif;
+
 			}
 			#facebook{
 				
@@ -528,9 +567,9 @@ body{
 				
 				background: url(images/twitter.png) no-repeat;
 				width: 35px;
-				height: 35px;
+				height: 34px;
 				&:hover{
-					background-position: 0 -36.5px;
+					background-position: 0 -35px;
 				}
 			
 			}
@@ -551,7 +590,7 @@ body{
 		background: url(images/globe.png) no-repeat;
 		position: absolute;
 		bottom: 0;
-		left: 33%;
+		left: calc(50% - 210px);
 		width: 420px;
 		height: 305px;
 		z-index: 0;
