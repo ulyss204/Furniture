@@ -15,6 +15,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
+@import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption|PT+Serif);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -368,9 +369,50 @@ td,
 th {
   padding: 0; }
 
+.dear_table_wrap_btn {
+  margin-left: 23%;
+  padding: 5px 25px;
+  border: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  background-image: -o-linear-gradient(bottom, #FFC234 0%, #FAA11A 100%);
+  background-image: -moz-linear-gradient(bottom, #FFC234 0%, #FAA11A 100%);
+  background-image: -webkit-linear-gradient(bottom, #FFC234 0%, #FAA11A 100%);
+  background-image: -ms-linear-gradient(bottom, #FFC234 0%, #FAA11A 100%);
+  background-image: linear-gradient(to bottom, #FFC234 0%, #FAA11A 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFC234), color-stop(1, #FAA11A)); }
+  .dear_table_wrap_btn:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.01, #FFC234), color-stop(0.63, #FAA11A));
+    background-image: -o-linear-gradient(top, #FFC234 1%, #FAA11A 63%);
+    background-image: -moz-linear-gradient(top, #FFC234 1%, #FAA11A 63%);
+    background-image: -webkit-linear-gradient(top, #FFC234 1%, #FAA11A 63%);
+    background-image: -ms-linear-gradient(top, #FFC234 1%, #FAA11A 63%);
+    background-image: linear-gradient(to top, #FFC234 1%, #FAA11A 63%); }
+
+.main_footer_form_submit {
+  background: transparent;
+  margin-left: 7%;
+  width: 14%;
+  height: 40px;
+  color: #fff;
+  border: 2px solid #fff;
+  margin-top: 8px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px; }
+  .main_footer_form_submit:hover {
+    background: #fff;
+    color: #000; }
+
 body {
   margin: 0 auto;
-  width: 1200px; }
+  width: 1280px;
+  position: relative; }
   body .header {
     width: 100%;
     height: 100px;
@@ -398,19 +440,19 @@ body {
           -moz-border-radius: 4px;
           -ms-border-radius: 4px;
           border-radius: 4px;
-          background-image: -webkit-linear-gradient(bottom, #FAA21A 20%, #F47520 100%);
-          background-image: -o-linear-gradient(bottom, #FAA21A 20%, #F47520 100%);
-          background-image: linear-gradient(to top, #FAA21A 20%, #F47520 100%);
-          background-image: -ms-linear-gradient(bottom, #FAA21A 20%, #F47520 100%);
-          background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20, #FAA21A), color-stop(100, #F47520));
-          background-image: -moz-linear-gradient(bottom, #FAA21A 20%, #F47520 100%); }
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFC234), color-stop(1, #FAA11A));
+          background-image: -o-linear-gradient(bottom, #FFC234 0%, #FAA11A 100%);
+          background-image: -moz-linear-gradient(bottom, #FFC234 0%, #FAA11A 100%);
+          background-image: -webkit-linear-gradient(bottom, #FFC234 0%, #FAA11A 100%);
+          background-image: -ms-linear-gradient(bottom, #FFC234 0%, #FAA11A 100%);
+          background-image: linear-gradient(to bottom, #FFC234 0%, #FAA11A 100%); }
           body .header nav .header_nav #header_nav_partner:hover {
-            background-image: linear-gradient(to top, #F47520 20%, #FAA11A 60%);
-            background-image: -webkit-linear-gradient(bottom, #F47520 20%, #FAA11A 60%);
-            background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20, #F47520), color-stop(60, #FAA11A));
-            background-image: -o-linear-gradient(bottom, #F47520 20%, #FAA11A 60%);
-            background-image: -moz-linear-gradient(bottom, #F47520 20%, #FAA11A 60%);
-            background-image: -ms-linear-gradient(bottom, #F47520 20%, #FAA11A 60%); }
+            background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.01, #FFC234), color-stop(0.63, #FAA11A));
+            background-image: -o-linear-gradient(top, #FFC234 1%, #FAA11A 63%);
+            background-image: -moz-linear-gradient(top, #FFC234 1%, #FAA11A 63%);
+            background-image: -webkit-linear-gradient(top, #FFC234 1%, #FAA11A 63%);
+            background-image: -ms-linear-gradient(top, #FFC234 1%, #FAA11A 63%);
+            background-image: linear-gradient(to top, #FFC234 1%, #FAA11A 63%); }
   body main {
     overflow: auto; }
     body main .pics {
@@ -506,44 +548,233 @@ body {
               width: 79%;
               text-align: center;
               margin-left: 11%; }
-            body main section .dear .dear_table .dear_table_wrap .dear_table_wrap_btn {
-              margin-left: 26%;
-              padding: 5px 25px; }
           body main section .dear .dear_table #dear_tab_wrap {
             background: url(images/window1.png) no-repeat;
             left: 22%; }
         body main section .dear #dear_tab {
           background: url(images/supplier.png) no-repeat;
           margin-left: 2%; }
-      body main section .choice .choice_h2 {
+      body main section .choice {
+        margin: 1px 4% 5%; }
+        body main section .choice .choice_h2 {
+          text-align: center;
+          text-transform: uppercase;
+          margin-top: 3%; }
+          body main section .choice .choice_h2 .choice_h2_span {
+            color: #5b5e5e; }
+        body main section .choice p {
+          text-align: center;
+          margin-bottom: 7%; }
+          body main section .choice p span {
+            color: #5b5e5e; }
+        body main section .choice .choice_cart .choice_cart_form {
+          display: inline-block;
+          width: 33%; }
+          body main section .choice .choice_cart .choice_cart_form .choice_cart_form_round {
+            width: 100px;
+            height: 100px;
+            float: left;
+            border: 1px solid #f58220;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%; }
+            body main section .choice .choice_cart .choice_cart_form .choice_cart_form_round:hover {
+              background: #f58220; }
+            body main section .choice .choice_cart .choice_cart_form .choice_cart_form_round .choice_cart_form_round_img {
+              margin: 18%; }
+            body main section .choice .choice_cart .choice_cart_form .choice_cart_form_round #diversity {
+              margin: 15%; }
+            body main section .choice .choice_cart .choice_cart_form .choice_cart_form_round #choice_cart_form_img {
+              margin: 29%; }
+          body main section .choice .choice_cart .choice_cart_form .choice_cart_form_approach {
+            margin-top: 3%; }
+          body main section .choice .choice_cart .choice_cart_form .choice_cart_form_h4 {
+            margin: 11% 0 10% 38%;
+            border-left: 3px solid #5b5e5e;
+            padding-left: 6%;
+            font-size: 21px; }
+          body main section .choice .choice_cart .choice_cart_form .choice_cart_form_approach {
+            margin-bottom: -5%; }
+          body main section .choice .choice_cart .choice_cart_form #choice_cart_form_process {
+            margin-left: 40%;
+            margin-top: 32%; }
+          body main section .choice .choice_cart .choice_cart_form .choice_cart_form_text {
+            text-align: left;
+            margin-top: 20%; }
+    body main .main_footer {
+      overflow: auto;
+      width: 100%;
+      background: url(images/background.png); }
+      body main .main_footer .main_footer_h3 {
         text-align: center;
+        color: #5b5e5e;
         text-transform: uppercase;
-        margin-top: 3%; }
-        body main section .choice .choice_h2 .choice_h2_span {
-          color: #5b5e5e; }
-      body main section .choice p {
+        font-size: 24px; }
+      body main .main_footer .main_footer_h5 {
         text-align: center;
-        margin-bottom: 7%; }
-        body main section .choice p span {
-          color: #5b5e5e; }
-      body main section .choice .choice_cart .choice_cart_form {
+        color: #fff; }
+      body main .main_footer .main_footer_contacts {
+        float: left;
+        margin-left: 15%; }
+        body main .main_footer .main_footer_contacts .main_footer_p {
+          color: #5b5e5e;
+          margin-bottom: 7%; }
+          body main .main_footer .main_footer_contacts .main_footer_p .main_footer_p_span {
+            color: #fff; }
+          body main .main_footer .main_footer_contacts .main_footer_p .main_footer_p_mail {
+            color: #fff; }
+            body main .main_footer .main_footer_contacts .main_footer_p .main_footer_p_mail:hover {
+              color: #f58220; }
+        body main .main_footer .main_footer_contacts .main_footer_t {
+          color: #fff;
+          margin-bottom: 7%; }
+        body main .main_footer .main_footer_contacts .a {
+          text-decoration: none; }
+          body main .main_footer .main_footer_contacts .a .main_footer_map {
+            background: url(images/map.png) no-repeat;
+            height: 137px;
+            width: 480px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 70px;
+            text-transform: uppercase;
+            font-size: 14px; }
+            body main .main_footer .main_footer_contacts .a .main_footer_map .main_footer_point {
+              margin-left: 329px;
+              margin-top: 14px; }
+      body main .main_footer .main_footer_form .main_footer_form_text {
+        width: 33%;
+        margin-left: 7%;
+        padding-bottom: 230px;
+        padding-top: 6px;
+        text-indent: 10px;
+        margin-bottom: 15px;
+        margin-top: 15px; }
+      body main .main_footer .main_footer_form .main_footer_form_mail {
+        width: 33%;
+        height: 40px;
+        margin-left: 7%;
+        text-indent: 10px;
+        margin-bottom: 20px; }
+      body main .main_footer .main_footer_form .main_footer_form_submit {
+        background: transparent;
+        margin-left: 7%;
+        width: 14%;
+        height: 40px;
+        color: #fff;
+        border: 2px solid #fff;
+        margin-top: 8px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px; }
+        body main .main_footer .main_footer_form .main_footer_form_submit:hover {
+          background: #fff;
+          color: #000; }
+      body main .main_footer .main_footer_form .main_footer_form_p {
+        color: #adaeae;
+        margin-left: 2%;
+        font-size: 14px;
         display: inline-block; }
-        body main section .choice .choice_cart .choice_cart_form .choice_cart_form_round {
-          width: 100px;
-          height: 100px;
-          float: left;
-          border: 1px solid #f58220;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          -ms-border-radius: 50%;
-          border-radius: 50%; }
-        body main section .choice .choice_cart .choice_cart_form .choice_cart_form_h4 {
-          margin: 8% 0 10% 38%;
-          border-left: 3px solid #5b5e5e;
-          padding-left: 6%;
-          font-size: 21px; }
-        body main section .choice .choice_cart .choice_cart_form .choice_cart_form_text {
-          text-align: left;
-          margin-top: 15%; }
+      body main .main_footer .main_footer_foot {
+        overflow: auto;
+        width: 100%;
+        background: url(images/foot.png);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover; }
+        body main .main_footer .main_footer_foot .main_footer_foot_h3 {
+          color: #fff;
+          text-align: center;
+          font-size: 24px;
+          margin-top: 95px;
+          margin-bottom: 40px; }
+        body main .main_footer .main_footer_foot #main_footer_foot_btn {
+          margin-left: 42%;
+          opacity: 0.9;
+          width: 16%;
+          height: 45px;
+          margin-bottom: 84px; }
+  body .footer {
+    overflow: auto;
+    width: 100%;
+    background: #5b5e5e;
+    opacity: 0.9; }
+    body .footer .footer_img {
+      float: left;
+      margin-left: 3%;
+      margin-top: 5%; }
+      body .footer .footer_img .footer_img_p {
+        font-size: 12px;
+        color: #adafaf; }
+    body .footer .footer_ul {
+      float: left;
+      margin: 6% 0 2% 10%;
+      width: 34%;
+      position: relative;
+      z-index: 4; }
+      body .footer .footer_ul .footer_ul_li {
+        display: inline-block;
+        color: #fff;
+        margin-right: 5%; }
+      body .footer .footer_ul #footer_ul_partner {
+        border: 1px solid #fff;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px;
+        width: 140px;
+        text-align: center;
+        height: 25px;
+        padding-top: 10px;
+        text-transform: uppercase; }
+        body .footer .footer_ul #footer_ul_partner:hover {
+          background: #fff;
+          color: transparent; }
+    body .footer .footer_p {
+      float: right;
+      margin-top: 4%;
+      margin-right: 2%;
+      color: #adafaf; }
+      body .footer .footer_p .footer_a {
+        color: #fff; }
+    body .footer .footer_social {
+      float: right;
+      width: 25%; }
+      body .footer .footer_social .footer_social_li {
+        display: inline-block;
+        margin-right: 6%; }
+      body .footer .footer_social .footer_soc {
+        text-transform: uppercase;
+        color: #adafaf; }
+      body .footer .footer_social #facebook {
+        background: url(images/facebook.png) no-repeat;
+        width: 35px;
+        height: 35px; }
+        body .footer .footer_social #facebook:hover {
+          background-position: 0 -35px; }
+      body .footer .footer_social #twitter {
+        background: url(images/twitter.png) no-repeat;
+        width: 35px;
+        height: 35px; }
+        body .footer .footer_social #twitter:hover {
+          background-position: 0 -36.5px; }
+      body .footer .footer_social #insta {
+        background: url(images/insta.png) no-repeat;
+        width: 35px;
+        height: 35px; }
+        body .footer .footer_social #insta:hover {
+          background-position: 0 -35px; }
+  body .globe {
+    background: url(images/globe.png) no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 33%;
+    width: 420px;
+    height: 305px;
+    z-index: 0;
+    opacity: 0.4; }
 
 /*# sourceMappingURL=style.css.map */
